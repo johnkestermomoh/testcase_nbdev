@@ -5,4 +5,8 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://johnkestermomoh.github.io',
                 'git_url': 'https://github.com/johnkestermomoh/testcase_nbdev',
                 'lib_path': 'testcase_nbdev'},
-  'syms': {'testcase_nbdev.core': {'testcase_nbdev.core.foo': ('core.html#foo', 'testcase_nbdev/core.py')}}}
+  'syms': { 'testcase_nbdev.core': {'testcase_nbdev.core.foo': ('core.html#foo', 'testcase_nbdev/core.py')},
+            'testcase_nbdev.testcase': { 'testcase_nbdev.testcase.load_data': ('core.html#load_data', 'testcase_nbdev/testcase.py'),
+                                         'testcase_nbdev.testcase.shopping': ('core.html#shopping', 'testcase_nbdev/testcase.py'),
+                                         'testcase_nbdev.testcase.shopping.__init__': ( 'core.html#shopping.__init__',
+                                                                                        'testcase_nbdev/testcase.py')}}}
