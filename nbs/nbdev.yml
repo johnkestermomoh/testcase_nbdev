@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "testcase_nbdev"
+  site-url: "https://johnkestermomoh.github.io/testcase_nbdev"
+  description: "Initial nbdev repository"
+  repo-branch: main
+  repo-url: "https://github.com/johnkestermomoh/testcase_nbdev"
