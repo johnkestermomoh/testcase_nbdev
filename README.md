@@ -13,10 +13,19 @@ pip install testcase_nbdev
 
 ## How to use
 
-Fill me in please! Don’t forget code examples:
+The following examples demonstrate how to use the testcase_nbdev
+packages
 
 ``` python
 1+1
 ```
 
     2
+
+``` python
+import math
+radius = 10
+2*math.pi*radius
+```
+
+    62.83185307179586

@@ -3,6 +3,18 @@
 # %% auto 0
 __all__ = ['all', 'load_data', 'say_gday', 'add', 'draw_n', 'shopping']
 
+# %% ../nbs/00_core.ipynb 3
+from nbdev.showdoc import *
+from fastcore.test import *
+from fastcore import docments
+from fastcore.meta import delegates
+from IPython.display import display,SVG
+from typing import List, Union, Tuple
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import numpy as np
+
 # %% ../nbs/00_core.ipynb 4
 def all(a, # Input array or object that can be converted to an array.
         axis:int|tuple|None=None, # Axis or axes along which a logical AND reduction is performed (default: all).
@@ -11,7 +23,7 @@ def all(a, # Input array or object that can be converted to an array.
         where=np._NoValue, # Elements to include in reduction. See `numpy.ufunc.reduce` for details. New in version 1.20.0.
         ) -> np.ndarray|bool: # A new boolean or array, or a reference to `out` if its specified.
     "Test whether all array elements along a given axis evaluate to `True`."
-    
+show_doc(all)
 
 # %% ../nbs/00_core.ipynb 5
 def load_data(
@@ -22,7 +34,8 @@ def load_data(
             df = pd.read_csv(data, engine='python')
             return df
     except Exception as e:
-        logger.info(f'check that {data} exist in environment.yaml file {e}')     
+        logger.info(f'check that {data} exist in environment.yaml file {e}') 
+show_doc(load_data)
 
 # %% ../nbs/00_core.ipynb 8
 def say_gday(
@@ -30,6 +43,7 @@ def say_gday(
     strine:bool=True,      # Use incomprehensible Aussie accent?
     dropbears:bool=False): # Also warn about drop-bears?
     "Says g'day, the classic Aussie greeting"
+show_doc(say_gday)
 
 # %% ../nbs/00_core.ipynb 9
 def add(
@@ -38,12 +52,14 @@ def add(
 )->int:    # the result of adding `a` to `b`
     "The sum of two numbers."
     return a+b
+show_doc(add)
 
 # %% ../nbs/00_core.ipynb 10
 def draw_n(n:int, # Number of cards to draw
            replace:bool=True # Draw with replacement?
           )->list: # List of cards
     "Draw `n` cards."
+show_doc(draw_n)
 
 # %% ../nbs/00_core.ipynb 12
 class shopping:
